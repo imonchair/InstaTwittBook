@@ -49,10 +49,10 @@
           </ul>
         </li>
       </ul>
-      <form class="navbar-form navbar-left" role="search">
+      <form class="navbar-form navbar-left" role="search" action="" method="post">
         <div class="form-group">
-          <input type="text" class="form-control" placeholder="Username">
-<input type="password" class="form-control" placeholder="Password">
+          <input type="text" class="form-control" placeholder="Username" value="{{ request.form.username }}">
+<input type="password" class="form-control" placeholder="Password" value="{{ request.form.password }}">
         </div>
         <button type="submit" class="btn btn-primary">Log me in biatch</button>
       </form>
